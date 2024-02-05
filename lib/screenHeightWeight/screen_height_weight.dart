@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_baby/ui/navigation/main_navigation.dart';
 
 import '../main_screen/background_widget.dart';
 
@@ -32,7 +33,7 @@ class _ScrenHeightWeightState extends State<ScreenHeightWeight> {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         crossAxisAlignment: CrossAxisAlignment.start,
         onPressed: () {
-          Navigator.of(context).pushNamed('/indicator_calendar_weight');
+          Navigator.of(context).pushNamed(MainNavigationRouteNames.indicatorCalendarWeight);
         },
         onPressedTwo: () {},
         paddingTwy:

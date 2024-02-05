@@ -1,35 +1,36 @@
 import 'package:flutter/material.dart';
+import 'package:my_baby/ui/navigation/main_navigation.dart';
 
 class MainScreenWidget extends StatelessWidget {
   const MainScreenWidget({Key? key}) : super(key: key);
 
   /// функции для навигаций
   void _screenAchievements(BuildContext context) {
-    Navigator.of(context).pushNamed('/screen_achievements');
+    Navigator.of(context).pushNamed(MainNavigationRouteNames.screenAchievements);
   }
 
   void _screenDoctors(BuildContext context) {
     Navigator.of(context).pushNamed(
-      '/screen_doctors',
+      MainNavigationRouteNames.screenDoctors,
     );
   }
 
   void _screenPhoto(BuildContext context) {
     Navigator.of(context).pushNamed(
-      '/screen_photo',
+      MainNavigationRouteNames.screenPhoto,
     );
   }
 
   void _screenAllergy(BuildContext context) {
-    Navigator.of(context).pushNamed('/screen_allergy');
+    Navigator.of(context).pushNamed(MainNavigationRouteNames.screenAllergy);
   }
 
   void _screenHeightWeight(BuildContext context) {
-    Navigator.of(context).pushNamed('/screen_height_weight');
+    Navigator.of(context).pushNamed(MainNavigationRouteNames.screenHeightWeight);
   }
 
   void _screenNotes(BuildContext context) {
-    Navigator.of(context).pushNamed('/notes_widget');
+    Navigator.of(context).pushNamed(MainNavigationRouteNames.notesWidget);
   }
 
   @override

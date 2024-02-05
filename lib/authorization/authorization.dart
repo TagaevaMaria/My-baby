@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:my_baby/ui/navigation/main_navigation.dart';
 import '../main_screen/background_widget.dart';
 import '../main_screen/main_screen_widget.dart';
 
@@ -32,7 +33,7 @@ class _AuthorizationState extends State<Authorization> {
     final data = _autDataController.text;
     final pol = _autPolController.text;
     if (name == 'Ромаха' && data == '29.12.2018' && pol == 'Мальчик') {
-      Navigator.of(context).pushNamed('/main_screen');
+      Navigator.of(context).pushNamed(MainNavigationRouteNames.mainScreenWidget);
       MaterialPageRoute<void>(builder: (context) => MainScreenWidget());
     } else {
       print('show error');

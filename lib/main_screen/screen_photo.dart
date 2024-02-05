@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_baby/ui/navigation/main_navigation.dart';
 import 'background_widget.dart';
 
 class ScreenPhoto extends StatefulWidget {
@@ -48,7 +49,7 @@ class _ScreenPhotoState extends State<ScreenPhoto> {
               itemBuilder: (context, index) {
                 return TextButton(
                   onPressed: () => Navigator.of(context)
-                      .pushNamed('/photoByMons', arguments: (index + 1)),
+                      .pushNamed(MainNavigationRouteNames.photoByMons, arguments: (index + 1)),
                   child: Image.asset(
                     _buttons[index],
                     width: 100,
