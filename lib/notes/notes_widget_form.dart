@@ -59,3 +59,13 @@ class _NotesNameWidget extends StatelessWidget {
     );
   }
 }
+
+class Model{
+  static const String name = '';
+  int age;
+  int rost;
+  sum(){}
+
+  Model(this.age,this.rost);
+}
+final gggg = Model(12,45);
