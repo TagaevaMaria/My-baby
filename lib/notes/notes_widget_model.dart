@@ -57,13 +57,4 @@ class NotesWidgetModelProvider extends InheritedNotifier {
 }
 
 
-class Hffff {
-  String fff  = '';
-  String ddd = '';
-  Hffff.oooo ({ required this.fff, required this.ddd}) {
-    print(4);
-  }
-// Фабричный конструктор
 
-
-}

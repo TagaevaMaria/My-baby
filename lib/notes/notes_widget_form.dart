@@ -30,7 +30,7 @@ class NotesWidgetFormBody extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: const Color.fromRGBO(165, 218, 249, 1),
       ),
-      body: const Center(
+      body:  Center(
         child: _NotesNameWidget(),
       ),
     );
@@ -38,7 +38,7 @@ class NotesWidgetFormBody extends StatelessWidget {
 }
 
 class _NotesNameWidget extends StatelessWidget {
-  const _NotesNameWidget({Key? key}) : super(key: key);
+   _NotesNameWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -58,14 +58,19 @@ class _NotesNameWidget extends StatelessWidget {
       ],
     );
   }
+
+final ff = '';
+
+
 }
 
-class Model{
-  static const String name = '';
-  int age;
-  int rost;
-  sum(){}
 
-  Model(this.age,this.rost);
+
+
+class Person{
+
+  String name = "";
+  int age = 0;
+
+  void display() => print("Name: $name \tAge: $age");
 }
-final gggg = Model(12,45);
