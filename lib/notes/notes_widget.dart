@@ -37,6 +37,7 @@ class NotesWidgetBody extends StatelessWidget {
             NotesWidgetModelProvider.read(context)?.model.showForm(context),
         child: const Icon(Icons.add),
       ),
+
     );
   }
 }
@@ -69,3 +70,4 @@ class _NotesList extends StatelessWidget {
     );
   }
 }
+

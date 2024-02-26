@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:hive_flutter/adapters.dart';
 import '../Domin/entity/notes.dart';
 
+
 class NotesWidgetModel extends ChangeNotifier {
   List<Note> _listNotes = [];
   List<Note> get listNotes => _listNotes;
@@ -32,12 +33,13 @@ class NotesWidgetModel extends ChangeNotifier {
     _listNotes = box.values.toList();
     notifyListeners();
   }
-}
+
+ }
 
 class NotesWidgetModelProvider extends InheritedNotifier {
   final NotesWidgetModel model;
 
-  const NotesWidgetModelProvider({
+   NotesWidgetModelProvider({
     Key? key,
     required this.model,
     required Widget child,
@@ -53,8 +55,18 @@ class NotesWidgetModelProvider extends InheritedNotifier {
         .getElementForInheritedWidgetOfExactType<NotesWidgetModelProvider>()
         ?.widget;
     return widget is NotesWidgetModelProvider ? widget : null;
+
   }
+
+
+
+  
 }
+
+
+
+
+
 
 
 

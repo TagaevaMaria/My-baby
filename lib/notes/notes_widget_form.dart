@@ -59,7 +59,8 @@ class _NotesNameWidget extends StatelessWidget {
     );
   }
 
-final ff = '';
+
+
 
 
 }
@@ -67,10 +68,4 @@ final ff = '';
 
 
 
-class Person{
 
-  String name = "";
-  int age = 0;
-
-  void display() => print("Name: $name \tAge: $age");
-}
