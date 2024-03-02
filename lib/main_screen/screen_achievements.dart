@@ -1,7 +1,7 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:my_baby/main_screen/background_widget.dart';
+import 'package:my_baby/ui/background_widget.dart';
 
 class ScreenAchievements extends StatefulWidget {
   const ScreenAchievements({Key? key}) : super(key: key);

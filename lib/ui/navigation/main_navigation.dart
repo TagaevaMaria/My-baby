@@ -1,19 +1,23 @@
-import 'package:flutter/cupertino.dart';
-import '../../ScreenHeightWeight/indicator_calendar_weight.dart';
-import '../../ScreenHeightWeight/screen_height_weight.dart';
-import '../../authorization/authorization.dart';
-import '../../main_screen/background_widget.dart';
-import '../../main_screen/main_screen_widget.dart';
+import 'package:flutter/material.dart';
+import 'package:my_baby/add_child/add_child.dart';
+import 'package:my_baby/main_screen/notes/notes_widget.dart';
+import 'package:my_baby/screen_enter/screen_enter.dart';
+import '../../main_screen/notes/notes_widget_form.dart';
+import '../../main_screen/screenHeightWeight/indicator_calendar_weight.dart';
+import '../../main_screen/screenHeightWeight/screen_height_weight.dart';
+import '../../main_screen/screen_allergy/screen_allergy.dart';
+import '../../main_screen/screen_doctors/screen_doctors.dart';
+import '../background_widget.dart';
+import '../../main_screen/main_screen.dart';
 import '../../main_screen/screen_achievements.dart';
-import '../../main_screen/screen_photo.dart';
-import '../../notes/notes_widget.dart';
-import '../../notes/notes_widget_form.dart';
-import '../../photo_by_mons/photo_by_mons_screen.dart';
-import '../../screen_allergy/screen_allergy.dart';
-import '../../screen_doctors/screen_doctors.dart';
+import '../../main_screen/screen_photo/screen_photo.dart';
+
+
+
 
 class MainNavigationRouteNames {
-  static const authorization = '/';
+  static const screenEnter = '/';
+  static const authorization = 'authorization';
   static const mainScreenWidget = '/main_screen';
   static const screenAchievements = '/screen_achievements';
   static const screenDoctors = '/screen_doctors';
@@ -24,15 +28,17 @@ class MainNavigationRouteNames {
   static const screenHeightWeight = '/screen_height_weight';
   static const indicatorCalendarWeight = '/indicator_calendar_weight';
   static const photoByMons = '/photoByMons';
+  static const addChild = '/addChild';
+
 }
 
 class MainNavigation {
-  final initialRoute = MainNavigationRouteNames.authorization;
+  final initialRoute = MainNavigationRouteNames.screenEnter;
   final routes = <String, Widget Function(BuildContext)>{
-    MainNavigationRouteNames.authorization: (context) => const Authorization(),
+    MainNavigationRouteNames.screenEnter: (context) => const ScreenEnterBody(),
     MainNavigationRouteNames.mainScreenWidget: (context) =>
         const BackgroundWidget(
-          child: MainScreenWidget(),
+          child: MainScreen(),
         ),
     MainNavigationRouteNames.screenAchievements: (context) =>
         const ScreenAchievements(),
@@ -43,12 +49,13 @@ class MainNavigation {
         const BackgroundWidget(child: NotesWidget()),
     MainNavigationRouteNames.notesWidgetForm: (context) =>
         const BackgroundWidget(child: NotesWidgetForm()),
-    MainNavigationRouteNames.screenPhoto: (context) => const ScreenPhoto(),
+    MainNavigationRouteNames.screenPhoto: (context) => const ScreenPhotoBody(),
     MainNavigationRouteNames.screenAllergy: (context) => const ScreenAllergy(),
     MainNavigationRouteNames.screenHeightWeight: (context) =>
         const ScreenHeightWeight(),
     MainNavigationRouteNames.indicatorCalendarWeight: (context) =>
         const IndicatorCalendarWeight(),
-    MainNavigationRouteNames.photoByMons: (context) => PhotoByMons()
+    MainNavigationRouteNames.photoByMons: (context) => const ScreenPhotoBody(),
+    MainNavigationRouteNames.addChild: (context) => const AddChild(),
   };
 }
