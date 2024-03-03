@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../main_screen/main_screen.dart';
 import '../ui/navigation/main_navigation.dart';
+import 'package:firebase_core/firebase_core.dart';
 
 class ScreenEnterModel extends ChangeNotifier {
 

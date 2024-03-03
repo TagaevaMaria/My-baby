@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:my_baby/screen_enter/screen_enter_model.dart';
 import 'package:my_baby/ui/background_widget.dart';
 import 'package:my_baby/ui/theme/style_text_filed.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:email_validator_flutter/email_validator_flutter.dart';
 
 class ScreenEnterBody extends StatefulWidget {
   const ScreenEnterBody({super.key});
