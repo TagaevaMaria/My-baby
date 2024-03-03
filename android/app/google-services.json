@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "299251738170",
+    "project_id": "my-baby-mobil",
+    "storage_bucket": "my-baby-mobil.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:299251738170:android:9a35ad18ab8fe1f1583703",
+        "android_client_info": {
+          "package_name": "com.example.my_baby"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFOOMoDadAnmbcKGsMyb-HfG3MLOyMjWw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
