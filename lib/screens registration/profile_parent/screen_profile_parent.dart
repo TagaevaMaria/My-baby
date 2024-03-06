@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:my_baby/screens%20registration/profile_parent/screen_profile_parent_model.dart';
-
-
 import '../../ui/background_widget.dart';
 import '../../ui/theme/style_text_filed.dart';
 import '../../widget/widget_сheckbox.dart';
@@ -56,7 +54,12 @@ class AddChildScreen extends StatelessWidget {
               MyTextFild(
                   controller: ScreenProfileParentModelProvider.read(context)
                       ?.model.emailParent),
-               CheckboxExample(),
+               const Row(
+                 children: [
+                   Expanded(child: FittedBox(child: Text('Соглашаюсь на обработку персональных данных', style:  TextStyle(overflow: TextOverflow.ellipsis,),), )),
+                   CheckboxExample(),
+                 ],
+               ),
             ],
           ),
         ),

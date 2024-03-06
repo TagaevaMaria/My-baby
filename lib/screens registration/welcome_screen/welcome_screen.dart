@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:my_baby/screens%20registration/screen_enter/welcome_screen_model.dart';
+import 'package:my_baby/screens%20registration/welcome_screen/welcome_screen_model.dart';
+
 
 import 'package:my_baby/ui/background_widget.dart';
 import 'package:my_baby/ui/navigation/main_navigation.dart';

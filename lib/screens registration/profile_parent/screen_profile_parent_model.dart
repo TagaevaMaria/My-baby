@@ -28,7 +28,7 @@ class ScreenProfileParentModel extends ChangeNotifier {
 
   /// метод, который ведет на регистрацию профиля родителя.
   void registration (BuildContext context){
-    Navigator.of(context).pushNamed(MainNavigationRouteNames.screenEnterBody);
+    Navigator.of(context).pushNamed(MainNavigationRouteNames.mainScreen);
 
   }
 

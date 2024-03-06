@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:my_baby/main_screen/notes/notes_widget.dart';
 import 'package:my_baby/screens%20registration/profile_parent/screen_profile_parent.dart';
+import 'package:my_baby/screens%20registration/welcome_screen/welcome_screen.dart';
 import '../../main_screen/notes/notes_widget_form.dart';
 import '../../main_screen/screenHeightWeight/indicator_calendar_weight.dart';
 import '../../main_screen/screenHeightWeight/screen_height_weight.dart';
 import '../../main_screen/screen_allergy/screen_allergy.dart';
 import '../../main_screen/screen_doctors/screen_doctors.dart';
 import '../../screens registration/add_child/add_child.dart';
-import '../../screens registration/screen_enter/welcome_screen.dart';
 import '../background_widget.dart';
 import '../../main_screen/main_screen.dart';
 import '../../main_screen/screen_achievements.dart';
@@ -17,7 +17,7 @@ import '../../main_screen/screen_photo/screen_photo.dart';
 
 
 class MainNavigationRouteNames {
-  static const screenEnterBody = '/';
+  static const welcomScreen = '/';
   static const authorization = 'authorization';
   static const mainScreen = '/main_screen';
   static const screenAchievements = '/screen_achievements';
@@ -35,9 +35,9 @@ class MainNavigationRouteNames {
 }
 
 class MainNavigation {
-  final initialRoute = MainNavigationRouteNames.screenEnterBody;
+  final initialRoute = MainNavigationRouteNames.welcomScreen;
   final routes = <String, Widget Function(BuildContext)>{
-    MainNavigationRouteNames.screenEnterBody: (context) => const WelcomeScreen(),
+    MainNavigationRouteNames.welcomScreen: (context) => const WelcomeScreen(),
     MainNavigationRouteNames.mainScreen: (context) =>
         const BackgroundWidget(
           child: MainScreen(),
