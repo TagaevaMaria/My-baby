@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:my_baby/ui/navigation/main_navigation.dart';
-import '../main_screen/main_screen.dart';
+
+import '../../main_screen/main_screen.dart';
+
 
 
 
@@ -24,13 +26,18 @@ class AddChildModel extends ChangeNotifier {
     final data = _autDataController.text;
     final pol = _autPolController.text;
     if (name == 'Ромаха' && data == '29.12.2018' && pol == 'Мальчик') { await
-      Navigator.of(context).pushNamed(MainNavigationRouteNames.mainScreenWidget);
+      Navigator.of(context).pushNamed(MainNavigationRouteNames.mainScreen);
       MaterialPageRoute<void>(builder: (context) => const MainScreen());
     } else {
       print('show error');
     }
   }
 
+  /// метод, который ведет на регистрацию профиля родителя.
+  void screenProfileParent (BuildContext context){
+    Navigator.of(context).pushNamed(MainNavigationRouteNames.screenProfileParent);
+
+ }
 
 
 }
