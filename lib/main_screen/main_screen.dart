@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_baby/ui/navigation/main_navigation.dart';
 
-
 import '../widget/widgets_main_screen.dart';
 
 class MainScreen extends StatelessWidget {
@@ -47,18 +46,6 @@ class MainScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.transparent,
       appBar: AppBar(
-        actions: [
-          Padding(
-            padding: const EdgeInsets.only(right: 20),
-            child: TextButton(
-              onPressed: ()=> _screenAddChild(context),
-              child: const Text(
-                'Добавить ребёнка',
-                style: TextStyle(fontSize: 18),
-              ),
-            ),
-          )
-        ],
         backgroundColor: const Color.fromRGBO(165, 218, 249, 1),
       ),
       body: Padding(
